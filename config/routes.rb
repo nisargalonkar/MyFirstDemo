@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users
+  devise_for :models
   resources :listings
 
   get 'pages/about'
@@ -61,4 +63,5 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
 end
